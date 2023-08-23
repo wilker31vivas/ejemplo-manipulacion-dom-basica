@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bucles</title>
+</head>
+<body>
+	<script>
+		/*1️-.Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:*/
+
+		//Ciclo For
+		for (let i = 0; i < 5; i++) {
+    		document.write("El valor de i es: " + i + "<br>");
+		}
+
+		for (let i = 10; i >= 2; i--) {
+    		document.write("El valor de i es: " + i + "<br>");
+		}
+		document.write("<br>")
+		//Ciclo while
+		let a = 0
+		while(a < 5){
+			document.write("El valor de a es: " + a + "<br>");
+			a++
+		}
+
+		var b = 10;
+		while(b >= 2) {
+			document.write("El valor de i es: " + b + "<br>");
+			b--
+		}
+
+		/*2-.Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.*/
+		function suma(){
+			let resultado = window.prompt("Cuanto es 2 + 2");
+			if (resultado == 4) {
+				alert("Felicitaciones! 😎");
+			}
+			else {
+				while(resultado != 4){
+				let resultado = window.prompt("Cuanto es 2 + 2");
+					if (resultado == 4) {
+						alert("Felicitaciones!");
+						break;
+					}
+					}		
+				}
+			} 
+
+		suma()
+
+		let respuesta;
+		while (respuesta != '4') {
+    		let pregunta = prompt('¿Cuánto es 2 + 2?')
+    		respuesta = pregunta;
+		}
+	</script>
+</body>
+</html>

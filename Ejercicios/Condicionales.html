@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Condicionales</title>
+</head>
+<body>
+	<script>
+		const tipoDeSuscripcion = "Basic";
+
+		if (tipoDeSuscripcion == "Free") {
+			document.write("Solo puedes tomar los cursos gratis");
+		} else if (tipoDeSuscripcion == "Basic") {
+			document.write("Puedes tomar casi todos los cursos de Platzi durante un mes");
+		} else if (tipoDeSuscripcion == "Expert") {
+			document.write("Puedes tomar casi todos los cursos de Platzi durante un año");
+		} else if (tipoDeSuscripcion == "ExpertPlus") {
+			document.write("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+		}
+document.write("<br>")
+		//2-.Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
+		function funcionSuscripcion(suscripcion) {
+			if (suscripcion == "Free") {
+			document.write("Solo puedes tomar los cursos gratis");
+		}	if (suscripcion == "Basic") {
+			document.write("Puedes tomar casi todos los cursos de Platzi durante un mes");
+		} if (suscripcion == "Expert") {
+			document.write("Puedes tomar casi todos los cursos de Platzi durante un año");
+		} if (suscripcion == "ExpertPlus") {
+			document.write("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+		}
+		}
+
+		funcionSuscripcion("Free")
+
+		//💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays o objetos y un solo condicional. 😏
+		const objetoSuscripciones = {
+    		free: 'Solo puedes tomar los cursos gratis',
+    		basic: 'Puedes tomar casi todos los cursos de Platzi durante un mes',
+    		expert: 'Puedes tomar casi todos los cursos de Platzi durante un año',
+    		expertduo: 'Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año',
+		};
+
+		function funcionSuscripcion2(suscripcion) {
+   			if (objetoSuscripciones[suscripcion]) {
+        		console.log(objetoSuscripciones[suscripcion]);
+        		return;
+    		}
+
+    		console.warn('Ese tipo de suscripción no existe')
+		}
+
+		funcionSuscripcion2('expertduo')
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Funciones</title>
+</head>
+<body>
+	<script>
+		/*1️-.Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:*/
+
+		/*
+		const name = "Juan David";
+		const lastname = "Castro Gallego";
+		const completeName = name + lastname;
+		const nickname = "juandc";
+
+		console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+		*/
+		function sobreNombre(name,lastname,nickname) {
+			let nombre = name;
+			let apellido = lastname;
+			let nompreCompleto = nombre + " " + apellido;
+
+			document.write("Mi nombre es " + nompreCompleto + ", pero prefiero que me digas " + nickname + ".")
+		}
+
+		sobreNombre("wilker","vivas","wilker31");
+	</script>
+</body>
+</html>

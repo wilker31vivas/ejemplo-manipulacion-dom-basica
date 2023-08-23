@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//-----		Variables	-----
+		let nombre = "wilker"
+		let apellido = "vivas"
+		let dineroAhorrado = 600;
+		let deudas = 50;
+
+		console.log("Nombre completo: " + nombre + " " + apellido);
+		console.log("Dinero real: " + (dineroAhorrado - deudas));
+
+		//-----		Funciones	-----
+		function sobreNombre(name,lastname,nickname) {
+			let nombre = name;
+			let apellido = lastname;
+			let nompreCompleto = nombre + " " + apellido;
+
+			console.log("Mi nombre es " + nompreCompleto + ", pero prefiero que me digas " + nickname + ".")
+		}
+
+		sobreNombre("wilker","vivas","wilker31");
+
+		//-----		Condicionales	-----
+		const tipoDeSuscripcion = "Basic";
+
+		if (tipoDeSuscripcion == "Free") {
+			console.log("Solo puedes tomar los cursos gratis");
+		} else if (tipoDeSuscripcion == "Basic") {
+			console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+		} else if (tipoDeSuscripcion == "Expert") {
+			console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+		} else if (tipoDeSuscripcion == "ExpertPlus") {
+			console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+		}
+
+
+		function funcionSuscripcion(suscripcion) {
+			if (suscripcion == "Free") {
+			console.log("Solo puedes tomar los cursos gratis");
+		}	if (suscripcion == "Basic") {
+			console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+		} if (suscripcion == "Expert") {
+			console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+		} if (suscripcion == "ExpertPlus") {
+			console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+		}
+		}
+
+		funcionSuscripcion("Free")
+		
+
+		//-----		Ciclos 		-----
+		//Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+
+		for (let i = 0; i < 5; i++) {
+    		console.log("El valor de i es: " + i);
+		}
+
+		for (let i = 10; i >= 2; i--) {
+    		console.log("El valor de i es: " + i);
+		}
+
+		var w = 0
+		while(w < 5){
+			w++
+			console.log("El valor de i es: " + w);
+		}
+
+		var v = 10;
+		while(v >= 5) {
+			v--
+			console.log("El valor de i es: " + v);
+		}
+	
+		function suma(){
+			let resultado = window.prompt("Cuanto es 2 + 2");
+			if (resultado == 4) {
+				alert("Felicitaciones! 😎");
+			}
+			else {
+				while(resultado != 4){
+				let resultado = window.prompt("Cuanto es 2 + 2");
+					if (resultado == 4) {
+						alert("Felicitaciones!");
+						break;
+					}
+					}		
+				}
+			} 
+
+		suma()
+
+		//----- 	Arrays		-----
+
+		function array(arr){
+			arr = ["Courtois","Mbappé","Vinicius"];
+			console.log(arr[0]);
+		}
+
+		array()
+
+		function array2(arr2){
+			arr2 = ["Belligham","Camavinga","Tchoameni"];
+			for (jugadores of arr2){
+				console.log(jugadores)
+			}
+		}
+
+		array2()
+	
+	</script>
+</body>
+</html>
